@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./calc-scrpt.js"></script>
+    <link rel="stylesheet" href="calc-style.css" type="text/css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="main-div">
+        <div id="resultDiv">
+            <input id="input-data" type="text">
+        </div>
+        <div id="numberDiv">
+            <div id="r1">
+                <button class="r1b" onclick="addToDisplay('7')"> 7 </button>
+                <button class="r1b" onclick="addToDisplay('8')"> 8</button>
+                <button class="r1b" onclick="addToDisplay('9')"> 9</button>
+                <button id="del" class="r1b" onclick="removeCharacter()">DEL</button>
+                
+            </div>
+            <div id="r2">
+                <button class="r2b" onclick="addToDisplay('4')"> 4</button>
+                <button class="r2b" onclick="addToDisplay('5')"> 5</button>
+                <button class="r2b" onclick="addToDisplay('6')"> 6</button>
+                <button class="r2b" onclick="addToDisplay('+')"> + </button>
+            </div>
+            <div id="r3">
+                <button class="r3b" onclick="addToDisplay('1')"> 1</button>
+                <button class="r3b" onclick="addToDisplay('2')"> 2</button>
+                <button class="r3b" onclick="addToDisplay('3')"> 3</button>
+                <button id="substract" class="r3b" onclick="addToDisplay('-')"> -</button>
+            </div>
+            <div id="r4">
+                <button class="r4b" onclick="addToDisplay('.')"> .</button>
+                <button class="r4b" onclick="addToDisplay('0')"> 0</button>
+                <button class="r4b" onclick="addToDisplay('/')"> /</button>
+                <button id="f" class="r4b" onclick="addToDisplay('*')"> *</button>
+            </div>
+            <div id="r5">
+                <button id="reset" class="r5b" onclick="clearDisplay()"> RESET</button>
+                <button id="result" class="r5b" onclick="calculate()"> =</button>
+        
+            </div>
+        </div>
+    </div>
+</body>
+</html>
